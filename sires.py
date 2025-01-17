@@ -19,7 +19,7 @@ if missing_columns:
 archetypes = data['archetype'].unique()
 selected_archetype = st.multiselect("Select Archetype(s):", options=archetypes, default=archetypes)
 
-min_foals = st.number_input("Minimum Number of Foals:", min_value=5, value=5 step=5)
+min_foals = st.number_input("Minimum Number of Foals:", min_value=5, value=5, step=5)
 
 search_name = st.text_input("Search by Horse Name:").strip().lower()
 
