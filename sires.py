@@ -13,6 +13,7 @@ if 'wps%' in data.columns:
     data['wps%'] = data['wps%'].str.rstrip('%').astype(float) / 100
 
 # Streamlit App
+st.set_page_config(layout="wide")
 st.title("Top Sires for Season 24")
 
 # Ensure required columns exist
